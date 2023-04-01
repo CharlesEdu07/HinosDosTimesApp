@@ -75,13 +75,13 @@ class _AnthemsAppState extends State<AnthemsApp> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              IconButton(
-                icon: Icon(Icons.arrow_back),
+              ElevatedButton(
                 onPressed: _previousAnthem,
+                child: Text('Anterior'),
               ),
-              IconButton(
-                icon: Icon(Icons.arrow_forward),
+              ElevatedButton(
                 onPressed: _nextAnthem,
+                child: Text('Próximo'),
               ),
             ],
           ),
