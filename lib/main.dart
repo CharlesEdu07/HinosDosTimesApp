@@ -68,21 +68,20 @@ class _AnthemsAppState extends State<AnthemsApp> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: _previousAnthem,
-                    alignment: Alignment.bottomLeft,
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.arrow_forward),
-                    onPressed: _nextAnthem,
-                    alignment: Alignment.bottomRight,
-                  ),
-                ],
+            ],
+          ),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(Icons.arrow_back),
+                onPressed: _previousAnthem,
+              ),
+              IconButton(
+                icon: Icon(Icons.arrow_forward),
+                onPressed: _nextAnthem,
               ),
             ],
           ),
